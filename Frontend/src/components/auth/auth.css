@@ -1,0 +1,33 @@
+.auth-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0a0014, #000);
+}
+
+.auth-card {
+  background: rgba(20, 10, 40, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255, 0, 255, 0.3);
+}
+
+.auth-card h2 {
+  margin-bottom: 10px;
+}
+
+.auth-card h2 span {
+  color: #ff4fd8;
+}
+
+.auth-card p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.link a {
+  color: #ff4fd8;
+}
