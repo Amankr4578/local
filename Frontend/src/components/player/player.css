@@ -1,0 +1,29 @@
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 240px;
+  right: 0;
+  height: 80px;
+  background: #050510;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.player-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-center button {
+  margin: 0 10px;
+  background: linear-gradient(90deg, #8a2be2, #ff4fd8);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}

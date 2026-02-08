@@ -7,11 +7,54 @@ export default function Home() {
   const [currentSong, setCurrentSong] = useState(null);
 
   const songs = [
-    { id: 1, name: "J'me FPM", artist: "TriFace", duration: "3:03" },
-    { id: 2, name: "Trio HxC", artist: "TriFace", duration: "1:41" },
-    { id: 3, name: "Un Poil De Relifion", artist: "TriFace", duration: "3:27" },
-    { id: 4, name: "Apologies", artist: "TriFace", duration: "2:25" },
-    { id: 5, name: "Mind Asylum", artist: "Skaut", duration: "3:03" }
+    {
+      id: 1,
+      name: "3:59 AM",
+      artist: "Arjit Singh",
+      year: "2003",
+      duration: "3:03",
+      src: "/songs/song1.mp3",
+    },
+    {
+      id: 2,
+      name: "Mera Naam Tu",
+      artist: "Sharukh Khan",
+      year: "2005",
+      duration: "1:41",
+      src: "/songs/song2.mp3",
+    },
+    {
+      id: 3,
+      name: "Bappa",
+      artist: "Ritik Deshmukh",
+      year: "2004",
+      duration: "3:27",
+      src: "/songs/song3.mp3",
+    },
+    {
+      id: 4,
+      name: "Isa",
+      artist: "Sydney Sweeny",
+      year: "2003",
+      duration: "3:27",
+      src: "/songs/song4.mp3",
+    },
+    {
+      id: 5,
+      name: "Excuses",
+      artist: "Guru Randhawa",
+      year: "2006",
+      duration: "3:27",
+      src: "/songs/song5.mp3",
+    },
+    {
+      id: 6,
+      name: "Aye Khuda",
+      artist: "Jakir ali",
+      year: "2004",
+      duration: "3:27",
+      src: "/songs/song6.mp3",
+    }
   ];
 
   return (
@@ -51,14 +94,13 @@ export default function Home() {
               <span>{index + 1}</span>
               <span>{song.name}</span>
               <span>{song.artist}</span>
-              <span>-</span>
+              <span>{song.year}</span>
               <span>{song.duration}</span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Player appears only when song is selected */}
       {currentSong && <PlayerBar song={currentSong} />}
     </div>
   );
