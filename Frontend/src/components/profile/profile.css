@@ -1,0 +1,30 @@
+.profile-card {
+  width: 320px;
+  background: #0f0f1f;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(90deg, #8a2be2, #ff4fd8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 15px;
+}
+
+.edit-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #8a2be2, #ff4fd8);
+  color: white;
+  cursor: pointer;
+}

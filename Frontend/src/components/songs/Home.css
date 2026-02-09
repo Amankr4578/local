@@ -36,21 +36,32 @@
 }
 
 .playlist-card {
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 120px;
   background: #0f0f1f;
-  border-radius: 20px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 25px rgba(255, 0, 255, 0.2);
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.15);
 }
+
+.playlist-card:hover {
+  box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
+  transform: translateY(-3px);
+}
+
 
 .song-table {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 10px;
   overflow: hidden;
+  max-height: 380px;
+  overflow-y: auto;
 }
+
 
 .table-header,
 .song-row {
@@ -66,4 +77,13 @@
 
 .song-row {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.search-box {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #0f0f1f;
+  color: white;
 }

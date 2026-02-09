@@ -63,7 +63,16 @@ export default function Home() {
 
       <div className="main-content">
         <div className="top-bar">
-          <button className="logout-btn">Logout</button>
+          <button
+  className="logout-btn"
+  onClick={() => {
+    localStorage.removeItem("token");
+    window.location.href = "/login";
+  }}
+>
+  Logout
+</button>
+
         </div>
 
         <h2 className="section-title">Playlists</h2>
