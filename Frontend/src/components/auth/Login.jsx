@@ -43,6 +43,7 @@ export default function Login() {
         <div className="input-group">
           <label>Password</label>
           <input
+            placeholder="***********"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -50,7 +51,7 @@ export default function Login() {
 
         <div className="auth-links">
           <a href="#">Forgot password?</a>
-          <Link to="/signup">Signup</Link>
+          <Link to="/signup">SignUp</Link>
         </div>
 
         <button className="auth-btn" onClick={handleLogin}>
